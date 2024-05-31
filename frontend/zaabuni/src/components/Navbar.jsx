@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+  const [isTopOfPage, setIsTopOfPage] = useState(true)
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,28 +19,39 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY === 0) setIsTopOfPage(true)
+      if (window.scrollY !== 0) setIsTopOfPage(false)
+      }
+      window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
+
   const handleNav = () => {
     setNav(!nav);
   };
 
+  const navbarBackground = isTopOfPage ? "bg-transparent" : "bg-[#00df9a]"
+
   const navItems = [
-    { id: 1, text: 'Home', link: '/' },
-    { id: 2, text: 'About', link: '/about' },
-    { id: 3, text: 'Announcements', link: '/announcements' },
-    { id: 4, text: 'Gallery', link: '/gallery' },
-    { id: 5, text: 'Contact', link: '/contact' },
+    { id: 1, text: 'Home', link: 'home' },
+    { id: 2, text: 'About', link: 'about' },
+    { id: 3, text: 'Announcements', link: 'announcements' },
+    { id: 4, text: 'Gallery', link: 'gallery' },
+    { id: 5, text: 'Contact', link: 'contact' },
   ];
 
   return (
-    <div className='bg-gray-800 flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white'>
+    <div className={`${navbarBackground} flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white sticky top-0 w-full z-50`}>
       {/* Logo */}
-      <h1 className='text-3xl font-bold text-[#00df9a] font-play'>ZAABUNI</h1>
+      <h1 className={`text-3xl font-bold ${isTopOfPage? "text-[#00df9a]": "text-white"} font-play`}>ZAABUNI</h1>
 
       {/* Desktop Navigation */}
       <ul className={`${isLargeScreen? 'flex' : 'hidden'}`}>
         {navItems.map(item => (
-          <li key={item.id} className='p-4 uppercase hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'>
-            <Link to={item.link}>{item.text}</Link>
+          <li key={item.id} className='p-4 uppercase font-bold hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'>
+            <Link to={item.link} smooth={true} duration={500}>{item.text}</Link>
           </li>
         ))}
       </ul>
@@ -58,7 +71,7 @@ const Navbar = () => {
         <h1 className='text-3xl font-bold text-[#00df9a] m-4 font-play'>ZAABUNI</h1>
         {navItems.map(item => (
           <li key={item.id} className='p-4 border-b border-gray-600 cursor-pointer hover:bg-[#00df9a] hover:text-black duration-300'>
-            <Link to={item.link}>{item.text}</Link>
+            <Link to={item.link} smooth={true} duration={500}>{item.text}</Link>
           </li>
         ))}
       </ul>

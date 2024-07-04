@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-scroll';
+import zaawhite from '../assets/zaawhite.jpg'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -43,9 +44,12 @@ const Navbar = () => {
   ];
 
   return (
-    <div className={`${navbarBackground} flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white sticky top-0 w-full z-50`}>
+    <div className={`${navbarBackground} flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white  top-0 w-full`}>
       {/* Logo */}
-      <h1 className={`text-3xl font-bold ${isTopOfPage? "text-[#00df9a]": "text-white"} font-play`}>ZAABUNI</h1>
+      <div className='flex gap-2'>
+        <h1 className={`text-3xl font-bold ${isTopOfPage? "text-[#00df9a]": "text-white"} font-play  order-2 mt-2`}>ZAABUNI</h1>
+        <img src={zaawhite} alt="Zaabuni Logo" className='h-12' />
+      </div>
 
       {/* Desktop Navigation */}
       <ul className={`${isLargeScreen? 'flex' : 'hidden'}`}>

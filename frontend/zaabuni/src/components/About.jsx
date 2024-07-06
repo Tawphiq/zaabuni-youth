@@ -10,7 +10,7 @@ const About = () => {
         </div>
         <div className="grid lg:grid-cols-2 text-lg">
           {/* <img src={zaabout} alt="" /> */}
-          <h1 className="text-5xl ml-4 text-red-950">Mobilizing resources to support and promote local development</h1>
+          <h1 className="text-5xl ml-4 text-yellow-950">Mobilizing resources to support and promote local development</h1>
           <p className="mb-4 text-xl text-white mx-4">
             Zaabuni Youth for Development is a voluntary youth association of Mamprugu whose membership includes all people living in Mamprugu, as well as all people of Mamprugu descent in other parts of the globe. The association aims to bring all sons and daughters of Mamprugu together and to provide a platform for discussing pertinent issues of common interest that will be beneficial to the people of Mamprugu.
           </p>

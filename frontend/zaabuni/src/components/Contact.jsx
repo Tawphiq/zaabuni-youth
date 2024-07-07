@@ -2,61 +2,54 @@
 
 const Contact = () => {
   return (
-    <div name="contact" className="py-16 px-4">
-      <div className="max-w-4xl mx-auto">
+    <div name="contact" className="bg-[url(./assets/zaacontact.jpg)] bg-no-repeat bg-cover  bg-center lg:bg-topd h-screen w-full">
+      <div className="backdrop-brightness-75 bg-gray-500/50 h-full w-full">
+      <div className="max-w-4xl mx-4">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-green-400">Contact Us</h1>
-          <p className="text-lg text-gray-600 mt-4">
+          <h1 className="text-4xl font-bold text-yellow-950 pt-10">Contact Us</h1>
+          <p className="text-2xl text-white mt-4">
             If you have any questions or would like to get involved, please fill out the form below to get in touch with us.
           </p>
         </div>
         <div className="mt-10">
           <form className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Name
-              </label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#00df9a] focus:border-[#00df9a] sm:text-sm"
+                placeholder="Name"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder:text-2xl focus:outline-none focus:ring-[#00df9a] focus:border-[#00df9a] sm:text-sm"
                 required
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email
-              </label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#00df9a] focus:border-[#00df9a] sm:text-sm"
+                placeholder="Email"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder:text-2xl focus:outline-none focus:ring-[#00df9a] focus:border-[#00df9a] sm:text-sm"
                 required
               />
             </div>
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
-                Subject
-              </label>
               <input
                 type="text"
                 id="subject"
                 name="subject"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#00df9a] focus:border-[#00df9a] sm:text-sm"
+                placeholder="Subject"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 shadow-md placeholder:text-2xl rounded-md focus:outline-none focus:border-[#00df9a] sm:text-sm"
                 required
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Message
-              </label>
               <textarea
                 id="message"
                 name="message"
                 rows="4"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#00df9a] focus:border-[#00df9a] sm:text-sm"
+                placeholder="Enter your message"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder:text-2xl focus:outline-none focus:ring-[#00df9a] focus:border-[#00df9a] sm:text-sm"
                 required
               ></textarea>
             </div>
@@ -70,6 +63,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
+      </div>
       </div>
     </div>
   );

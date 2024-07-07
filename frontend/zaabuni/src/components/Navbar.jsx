@@ -3,6 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-scroll';
 import zaawhite from '../assets/zaabwhite.jpg'
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
@@ -38,8 +39,8 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: 'Home', link: 'home' },
     { id: 2, text: 'About', link: 'about' },
-    { id: 3, text: 'Announcements', link: 'announcements' },
-    { id: 4, text: 'Gallery', link: 'gallery' },
+    { id: 3, text: 'Projects', link: 'Projects' },
+    { id: 4, text: 'Projects', link: 'Projects' },
     { id: 5, text: 'Contact', link: 'contact' },
   ];
 
@@ -62,7 +63,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className='block md:hidden'>
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        {nav ? <AiOutlineClose size={50} /> : <AiOutlineMenu size={50} />}
       </div>
 
       {/* Mobile Navigation Menu */}

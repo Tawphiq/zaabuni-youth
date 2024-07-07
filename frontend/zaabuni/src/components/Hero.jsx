@@ -1,11 +1,15 @@
+import {useEffect} from 'react'
 import {ReactTyped} from 'react-typed'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Hero = () => {
+  useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
     <div>
       <div className="text-left ml-4 lg:ml-10">
-       <h1 className="text-2xl font-bold text-[#00df9a] mt-20 lg:mt-40">Zaabuni Youth for Development</h1>
+       <h1 data-aos="fade-left" className="text-2xl font-bold text-[#00df9a] mt-20 lg:mt-40">Zaabuni Youth for Development</h1>
         <p className="text-6xl text-gray-100 mt-2">
           <ReactTyped 
           strings={["Empowering the youth of Mamprugu for a brighter future."]}

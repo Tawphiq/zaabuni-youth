@@ -63,7 +63,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className='block md:hidden'>
-        {nav ? <AiOutlineClose size={50} /> : <AiOutlineMenu size={50} />}
+        {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} />}
       </div>
 
       {/* Mobile Navigation Menu */}

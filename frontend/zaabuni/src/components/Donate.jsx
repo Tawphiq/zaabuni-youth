@@ -1,12 +1,16 @@
+import {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUniversity, faUser, faCreditCard} from '@fortawesome/free-solid-svg-icons';
 //import zaabdonate from '../assets/zaadonor.jpg'
 
 const Donation = () => {
+  useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
-    <section id="donation" className="bg-gray-100">
+    <section data-aos="fade-up" id="donation" className="bg-gray-100">
       <div className="containerg mx-4">
-        <h2 className="text-4xl font-bold pt-10 text-center text-yellow-950">Make a Donation</h2>
+        <h2 data-aos="fade-left" className="text-4xl font-bold pt-10 text-center text-yellow-950">Make a Donation</h2>
         <div className='grid lg:grid-cols-2 lg:p-16'>
         {/* <img src={zaabdonate} alt="" className='lg:h-80' /> */}
           <p className="mb-4 text-2xl text-gray-700">
@@ -15,17 +19,17 @@ const Donation = () => {
           </div>
           <div className='bg-gray-200 shadow rounded-md py-10'>
           {/* <h3 className="text-3xl text-center font-semibold mb-2 text-yellow-950">Bank Details</h3> */}
-          <p className="mb-8 grid ml-24">
+          <p data-aos="fade-left" className="mb-8 grid ml-24">
             <FontAwesomeIcon icon={faUniversity} className="text-[#00df9a] ml-8 mb-3 flex h-10" />
             <p className='text-yellow-950 text-2xl font-bold'>Bank Name</p>
             <p className='text-2xl'>XYZ Bank</p>
           </p>
-          <p className="mb-8 grid ml-24">
+          <p data-aos="fade-right" className="mb-8 grid ml-24">
             <FontAwesomeIcon icon={faUser} className="text-[#00df9a] ml-8 mb-3 flex h-10" />
             <p className='text-yellow-950 text-2xl font-bold'>Account Name</p>
             <p className='text-2xl'>Zaabuni Youth for Development</p>
           </p>
-          <p className="mb-8 grid ml-24">
+          <p data-aos="fade-left" className="mb-8 grid ml-24">
             <FontAwesomeIcon icon={faCreditCard} className="text-[#00df9a] ml-8 mb-3 flex h-10" />
             <p className='text-yellow-950 text-2xl font-bold'>Account Number</p>
             <p className='text-2xl'>123456789</p>

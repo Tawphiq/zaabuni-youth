@@ -1,12 +1,15 @@
-
+import {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+  useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
-    <div name="contact" className="bg-[url(./assets/zaacontact.jpg)] bg-no-repeat bg-cover  bg-center lg:bg-topd h-screen w-full">
+    <div data-aos="fade-up" name="contact" className="bg-[url(./assets/zaacontact.jpg)] bg-no-repeat bg-cover  bg-center lg:bg-topd h-screen w-full">
       <div className="backdrop-brightness-75 bg-gray-500/50 h-full w-full">
       <div className="max-w-4xl mx-4">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-yellow-950 pt-10">Contact Us</h1>
+          <h1 data-aos="fade-left" className="text-4xl font-bold text-yellow-950 pt-10">Contact Us</h1>
           <p className="text-2xl text-white mt-4">
             If you have any questions or would like to get involved, please fill out the form below to get in touch with us.
           </p>

@@ -1,12 +1,15 @@
-//import zaabout from '../assets/zaabout.webp'
+import {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
-    <div name="about" className="bg-[url(./assets/zaabout.webp)] bg-no-repeat bg-cover  bg-center lg:bg-topd min-h-screen w-full">
+    <div data-aos="fade-up" name="about" className="bg-[url(./assets/zaabout.webp)] bg-no-repeat bg-cover  bg-center lg:bg-topd min-h-screen w-full">
       <div className='backdrop-brightness-75 bg-gray-400/50 h-full w-full'>
       <div className="max-w-7xl mx-auto">
         <div className="mb-2 text-4xl">
-          <h4 className="text-4xl ml-4 font-bold text-[#00df9a]h text-yellow-950 text-center pt-10 font-play">About Us</h4>
+          <h4 data-aos="fade-left" className="text-4xl ml-4 font-bold text-[#00df9a]h text-yellow-950 text-center pt-10 font-play">About Us</h4>
         </div>
         <div className="grid lg:grid-cols-2 text-lg">
           {/* <img src={zaabout} alt="" /> */}

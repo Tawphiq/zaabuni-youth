@@ -39,8 +39,8 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: 'Home', link: 'home' },
     { id: 2, text: 'About', link: 'about' },
-    { id: 3, text: 'Projects', link: 'Projects' },
-    { id: 4, text: 'Projects', link: 'Projects' },
+    { id: 3, text: 'Projects', link: 'projects' },
+    { id: 4, text: 'Donate', link: 'donate' },
     { id: 5, text: 'Contact', link: 'contact' },
   ];
 

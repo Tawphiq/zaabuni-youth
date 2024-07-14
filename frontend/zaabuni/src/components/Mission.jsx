@@ -4,7 +4,7 @@ import aboutzaa from '../assets/aboutzaa.jpg'
 
 const Mission = () => {
   return (
-    <section id="mission" className="p-8 bg-gray-50">
+    <section id="mission" className="p-8 bg-gray-50 font-nunito">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
         <img src={aboutzaa} alt="" className='rounded-2xl mb-4'/>

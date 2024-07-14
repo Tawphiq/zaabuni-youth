@@ -6,10 +6,10 @@ import zabout from '../assets/zabout.jpg'
 const About = () => {
   useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
-    <div name="about" className="bg-teal-200 h-screen w-full p-6">
+    <div name="about" className="bg-teal-200 h-screen w-full p-6 font-nunito">
       <div className="max-w-7xl mx-auto">
         <div className="mb-2 text-4xl">
-          <h4 data-aos="fade-left" className="text-4xl font-bold mb-4 text-gray-600 font-play">About Us</h4>
+          <h4 data-aos="fade-left" className="text-3xl font-bold mb-4 text-gray-600">About Us</h4>
           <img src={zabout} alt="" className='rounded-2xl' />
         </div>
         <div className="grid lg:grid-cols-2 text-lg">

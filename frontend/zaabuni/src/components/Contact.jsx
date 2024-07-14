@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 const Contact = () => {
   useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
-    <div name="contact" className="bg-[url(./assets/zaacontact.jpg)] bg-no-repeat bg-cover  bg-center lg:bg-topd h-screen w-full">
+    <div name="contact" className="bg-[url(./assets/zaacontact.jpg)] bg-no-repeat bg-cover font-nunito bg-center lg:bg-topd h-screen w-full">
       <div className="backdrop-brightness-75 bg-gray-500/50 h-full w-full">
       <div className="max-w-4xl mx-4">
         <div className="text-center mb-8">

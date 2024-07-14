@@ -45,7 +45,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`${navbarBackground} flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white sticky top-0 w-full z-50`}>
+    <nav className={`${navbarBackground} font-nunito flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white sticky top-0 w-full z-50`}>
       {/* Logo */}
       <div className='flex gap-2'>
         {/* <h1 className={`text-3xl font-bold ${isTopOfPage? "text-[#00df9a]": "text-white"} font-play  order-2 mt-2`}>ZAABUNI</h1> */}

@@ -34,7 +34,7 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const navbarBackground = isTopOfPage ? "bg-transparent" : "bg-[#00df9a]"
+  const navbarBackground = isTopOfPage? "bg-orange-200 shadow lg:text-black": "bg-teal-200"
 
   const navItems = [
     { id: 1, text: 'Home', link: 'home' },
@@ -45,11 +45,11 @@ const Navbar = () => {
   ];
 
   return (
-    <div className={`${navbarBackground} flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white sticky top-0 w-full z-50`}>
+    <nav className={`${navbarBackground} flex justify-between items-center h-24 max-w-full mx-auto px-4 text-white sticky top-0 w-full z-50`}>
       {/* Logo */}
       <div className='flex gap-2'>
         {/* <h1 className={`text-3xl font-bold ${isTopOfPage? "text-[#00df9a]": "text-white"} font-play  order-2 mt-2`}>ZAABUNI</h1> */}
-        <img src={zaawhite} alt="Zaabuni Logo" className='h-16' />
+        <img src={zaawhite} alt="Zaabuni Logo" className='h-12' />
       </div>
 
       {/* Desktop Navigation */}
@@ -62,7 +62,7 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Navigation Icon */}
-      <div onClick={handleNav} className='block md:hidden'>
+      <div onClick={handleNav} className='block text-black md:hidden'>
         {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} />}
       </div>
 
@@ -73,14 +73,14 @@ const Navbar = () => {
           : 'fixed left-[-100%] top-0 h-full w-[60%] ease-in-out duration-500'
         }
       >
-        <h1 className='text-3xl font-bold text-[#00df9a] m-4 font-play'>ZAABUNI</h1>
+        <img src={zaawhite} alt="Zaabuni Logo" className='h-12 ml-4 mt-5' />
         {navItems.map(item => (
           <li key={item.id} className='p-4 border-b border-gray-600 cursor-pointer hover:bg-[#00df9a] hover:text-black duration-300'>
             <Link to={item.link} smooth={true} duration={500}>{item.text}</Link>
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 

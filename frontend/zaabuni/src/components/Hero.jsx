@@ -14,7 +14,7 @@ const Hero = () => {
           Empowering the youth of Mamprugu for a brighter future.
         </p>
         <div className="grid grid-cols-2 gap-2 mt-10 mr-4 lg:w-96 text-xl">
-          <Link to="about" smooth={true} duration={500} className="font-bold text-gray-600 text-center bg-teal-200 hover:bg-orange-200 hover:text-gray-600 hover:border-2 p-2 shadow rounded-xl">About US</Link>
+          <Link to="about" smooth={true} duration={500} className="font-bold text-gray-600 text-center bg-teal-200 hover:bg-orange-200 hover:text-gray-600 p-2 shadow rounded-xl">About US</Link>
           <Link to="donate" smooth={true} duration={500} className="font-bold text-gray-600 bg-orange-200 text-center p-2 hover:text-gray-600 hover:bg-teal-200 shadow rounded-md">Support Us</Link>
         </div>
         </div>

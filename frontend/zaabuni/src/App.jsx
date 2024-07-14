@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 function App() {
 
   return (
-    <div className='font-ubuntu overflow-x-clip  w-full'>
+    <div className='font-nunito overflow-x-clip w-full'>
       <Navbar />
       <Hero />
       <Home />

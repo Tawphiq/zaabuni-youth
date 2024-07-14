@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         play:["Play"],
         ubuntu:["Ubuntu"],
+        nunito:["Nunito"],
       }
     },
   },

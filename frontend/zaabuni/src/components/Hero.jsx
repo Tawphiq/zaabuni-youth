@@ -8,7 +8,7 @@ const Hero = () => {
   useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
     <div>
-      <div className="text-left mb-10 ml-4 lg:ml-10 h-[75vh] lg:h-[70vh]">
+      <div className="text-left mb-10 ml-4 lg:ml-10 h-[70vh] lg:h-[70vh]">
        <h1 data-aos="fade-left" className="text-2xl font-bold text-orange-300 mt-20 lg:mt-40">Zaabuni Youth for Development</h1>
         <p className="text-6xl mt-2">
           Empowering the youth of Mamprugu for a brighter future.

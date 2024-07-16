@@ -14,7 +14,7 @@ const Donation = () => {
         <div className='grid lg:grid-cols-2 lg:p-16'>
         <img src={donatezaa} alt="" className='rounded-2xl' />
           </div>
-          <div className='py-10'>
+          <div className='py-5'>
             <p className='text-gray-600  text-2xl font-bold'>Bank Name</p>
             <p className='text-xl mb-4'>XYZ Bank</p>
             <p className='text-gray-600  text-2xl font-bold'>Account Name</p>
@@ -22,7 +22,7 @@ const Donation = () => {
             <p className='text-gray-600  text-2xl font-bold'>Account Number</p>
             <p className='text-xl'>123456789</p>
           </div>
-          <p className="text-xl text-gray-700">
+          <p className="text-xl text-gray-700 pb-10">
             Your generous contributions help us to empower the youth of Mamprugu
           </p>
       </div>

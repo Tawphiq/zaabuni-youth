@@ -6,7 +6,7 @@ import Mission from './Mission';
 
 const Home = () => {
   return (
-    <div name="home" className="py-16px-4 font-play">
+    <div name="home" className="py-16px-4">
       {/* <Hero /> */}
       <Mission />
       <About />

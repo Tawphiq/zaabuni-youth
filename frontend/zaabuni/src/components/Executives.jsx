@@ -40,7 +40,7 @@ const executives = [
 
 const Executives = () => {
   return (
-    <section id="executives" className="p-4 pb-10 bg-gray-100">
+    <section name="executives" className="p-4 pb-10 bg-gray-100">
       <div className="container mx-auto">
         <h2 className="text-3xl px-4 font-bold mb-4">Our Executives</h2>
         <div className="grid gap-3 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

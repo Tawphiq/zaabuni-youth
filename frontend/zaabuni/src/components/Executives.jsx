@@ -1,5 +1,7 @@
 // src/components/Executives.jsx
-import React from 'react';
+import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const executives = [
@@ -39,8 +41,9 @@ const executives = [
   
 
 const Executives = () => {
+    useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
-    <section name="executives" className="p-4 pb-10 bg-gray-100">
+    <section data-aos="fade-up" name="executives" className="p-4 pb-10 bg-gray-100">
       <div className="container mx-auto">
         <h2 className="text-3xl px-4 font-bold mb-4">Our Executives</h2>
         <div className="grid gap-3 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

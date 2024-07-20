@@ -1,12 +1,16 @@
 // src/components/ProjectDetail.jsx
 import React from 'react';
 import { useParams } from 'react-router-dom';
+//zaabuni 1st annual congress
+import zabout from '../assets/zabout.jpg'
 import aboutzaa from "../assets/aboutzaa.jpg"
 import scene1 from '../assets/scene1.jpg'
 import scene2 from '../assets/scene2.jpg'
 import scene3 from '../assets/scene3.jpg'
 import scene4 from '../assets/scene4.jpg'
 import scene7 from '../assets/scene7.jpg'
+//Donation of an Ultra-Modern Multipurpose Printer Nayiri
+import donatezaa from '../assets/donatezaa.jpg'
 
 
 const projects = [
@@ -14,13 +18,13 @@ const projects = [
     id: 1,
     title: 'Zaabuni 1st annual congress',
     description: 'The 1st  Zaabuni annual Congress, recently convened, gathered  leaders, community chiefs, and stakeholders to strategize on enhancing support initiatives in aspects that included educational scholarships opportunities, community health and wellness, and peace and stability. Discussions focused on fundraising efforts, implementing community projects, and fostering partnerships for sustainable development.',
-    image: '/src/assets/zabout.jpg',
+    image: zabout,
   },
   {
     id: 2,
-    title: 'Educational Support Program',
-    description: 'Providing scholarships and educational materials to students in need. Detailed description goes here...',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    title: 'Donation of an Ultra-Modern Multipurpose Printer Nayiri',
+    description: 'As part of our ongoing efforts to support local leadership and administration, Zaabuni Youth for Development is proud to announce the donation of an ultra-modern multipurpose printer to our esteemed overlord, the Nayiri. This state-of-the-art equipment will greatly enhance the administrative capabilities of the Nayiri’s office, facilitating better record-keeping, communication, and overall efficiency.',
+    image: donatezaa,
   },
   {
     id: 3,
@@ -55,7 +59,7 @@ const ProjectDetail = () => {
           {project.title === "Zaabuni 1st annual congress" && <div>
             <h1 className='py-6 font-bold text-3xl'>Invitations</h1>
             <div>
-            <p>Courtesy calls where made to the distinguished Overload through to his sons (paramount chiefs ) .</p>
+            <p>Courtesy calls where made to the distinguished Overload through to his sons the paramount chiefs .</p>
             <img src="/src/assets/nayiri.jpg" alt="" className='h-96 w-full mt-4' />
             </div>
             <div className='mt-6'>
@@ -74,6 +78,11 @@ const ProjectDetail = () => {
                     <img src={scene7} alt="" />
                 </div>
             </div>
+          </div> }
+
+          {project.title === 'Donation of an Ultra-Modern Multipurpose Printer Nayiri' && <div>
+            <p>The multipurpose printer is equipped with advanced features including high-speed printing, scanning, copying, and faxing, designed to meet the diverse needs of the Nayiri’s office.</p>
+            <p>This donation will streamline administrative tasks, reduce operational costs, and improve the overall functionality of the office, thereby enhancing governance and service delivery to the people of Mamprugu.</p>
           </div> }
 
         </div>

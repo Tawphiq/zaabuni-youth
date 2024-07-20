@@ -1,6 +1,8 @@
 // src/components/Projects.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import donatezaa from '../assets/donatezaa.jpg'
+
 
 const projects = [
   {
@@ -11,9 +13,9 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Educational Support Program',
-    description: 'Providing scholarships and educational materials to students in need.',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    title: 'Donation of an Ultra-Modern Multipurpose Printer Nayiri',
+    description: 'As part of our ongoing efforts to support local leadership and administration, Zaabuni Youth for Development is proud to announce the donation of an ultra-modern multipurpose printer to our esteemed overlord, the Nayiri.',
+    image: donatezaa,
   },
   {
     id: 3,

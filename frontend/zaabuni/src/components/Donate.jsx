@@ -15,12 +15,20 @@ const Donation = () => {
         <img src={donatezaa} alt="" className='rounded-2xl' />
           </div>
           <div className='py-5'>
+            <h1 className='text-xl text-gray-700 font-extrabold uppercase'>Mobile Money Details</h1>
             <p className='text-gray-600  text-2xl font-bold'>Merchant ID</p>
             <p className='text-xl mb-4'>000851</p>
             <p className='text-gray-600  text-2xl font-bold'>Momo Account</p>
             <p className='text-xl mb-4'>0597409105</p>
             <p className='text-gray-600  text-2xl font-bold'>Account Name</p>
             <p className='text-xl'>Zaabuni Youth for Development</p>
+            <h1 className='text-xl text-gray-700 font-extrabold uppercase mt-8'>Bank Details</h1>
+            <p className='text-gray-600  text-2xl font-bold'>Bank</p>
+            <p className='text-xl mb-4'>GCB</p>
+            <p className='text-gray-600  text-2xl font-bold'>Branch</p>
+            <p className='text-xl mb-4'>Walewale Branch</p>
+            <p className='text-gray-600  text-2xl font-bold'>Account Number</p>
+            <p className='text-xl mb-4'>9061010007408</p>
           </div>
           <p className="text-xl text-gray-700 pb-10">
             Your generous contributions help us to empower the youth of Mamprugu

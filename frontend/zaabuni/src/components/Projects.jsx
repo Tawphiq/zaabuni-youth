@@ -1,6 +1,7 @@
 // src/components/Projects.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import zabout from '../assets/zabout.jpg'
 import donatezaa from '../assets/donatezaa.jpg'
 
 
@@ -9,7 +10,7 @@ const projects = [
     id: 1,
     title: 'Zaabuni 1st annual congress',
     description: 'The 1st Zaabuni Annual Congress recently convened leaders, community chiefs, and stakeholders to strategize on enhancing support initiatives in areas including educational scholarships opportunities, community health and wellness, and peace and stability.',
-    image: '/src/assets/zabout.jpg',
+    image: zabout,
   },
   {
     id: 2,

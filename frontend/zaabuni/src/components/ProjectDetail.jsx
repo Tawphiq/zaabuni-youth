@@ -1,6 +1,13 @@
 // src/components/ProjectDetail.jsx
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import aboutzaa from "../assets/aboutzaa.jpg"
+import scene1 from '../assets/scene1.jpg'
+import scene2 from '../assets/scene2.jpg'
+import scene3 from '../assets/scene3.jpg'
+import scene4 from '../assets/scene4.jpg'
+import scene7 from '../assets/scene7.jpg'
+
 
 const projects = [
   {
@@ -59,12 +66,12 @@ const ProjectDetail = () => {
             <div>
                 <h1 className='py-6 font-bold text-3xl'>Scenes from Zaabuni Congress on the 7th January 2024</h1>
                 <div className='grid grid-cols-2 gap-2'>
-                    <img src="/src/assets/aboutzaa.jpg" alt="" />
-                    <img src="/src/assets/scene1.jpg" alt="" />
-                    <img src="/src/assets/scene2.jpg" alt="" />
-                    <img src="/src/assets/scene3.jpg" alt="" />
-                    <img src="/src/assets/scene4.jpg" alt="" />
-                    <img src="/src/assets/scene7.jpg" alt="" />
+                    <img src={aboutzaa} alt="" />
+                    <img src={scene1} alt="" />
+                    <img src={scene2} alt="" />
+                    <img src={scene3} alt="" />
+                    <img src={scene4} alt="" />
+                    <img src={scene7} alt="" />
                 </div>
             </div>
           </div> }

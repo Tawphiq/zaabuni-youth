@@ -5,9 +5,9 @@ import { useParams } from 'react-router-dom';
 const projects = [
   {
     id: 1,
-    title: 'Community Health Initiative',
-    description: 'A project focused on improving healthcare access and awareness in the Mamprugu community. Detailed description goes here...',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    title: 'Zaabuni 1st annual congress',
+    description: 'The 1st  Zaabuni annual Congress, recently convened, gathered  leaders, community chiefs, and stakeholders to strategize on enhancing support initiatives in aspects that included educational scholarships opportunities, community health and wellness, and peace and stability. Discussions focused on fundraising efforts, implementing community projects, and fostering partnerships for sustainable development.',
+    image: '/src/assets/zabout.jpg',
   },
   {
     id: 2,
@@ -38,12 +38,37 @@ const ProjectDetail = () => {
   }
 
   return (
-    <section id="project-detail" className="p-8 bg-gray-100">
+    <section id="project-detail" className="bg-orange-100">
       <div className="container mx-auto">
-        <div className="bg-white p-6 rounded shadow-md">
+        <div className="bg- p-6 rounded shadow-md">
           <img src={project.image} alt={project.title} className="rounded-t-lg mb-4 w-full h-80 object-cover" />
           <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
           <p className="text-lg leading-relaxed">{project.description}</p>
+
+          {project.title === "Zaabuni 1st annual congress" && <div>
+            <h1 className='py-6 font-bold text-3xl'>Invitations</h1>
+            <div>
+            <p>Courtesy calls where made to the distinguished Overload through to his sons (paramount chiefs ) .</p>
+            <img src="/src/assets/nayiri.jpg" alt="" className='h-96 w-full mt-4' />
+            </div>
+            <div className='mt-6'>
+                <p>Zaabuni leadership at the residence of H.E. the Vice President and leader of the NPP in the 2024 presidential elections to officially welcome him to Walewale for the Zaabuni Congress 
+                </p>
+                <img src="/src/assets/zaavice.jpg" alt="" className='mt-4'/>
+            </div>
+            <div>
+                <h1 className='py-6 font-bold text-3xl'>Scenes from Zaabuni Congress on the 7th January 2024</h1>
+                <div className='grid grid-cols-2 gap-2'>
+                    <img src="/src/assets/aboutzaa.jpg" alt="" />
+                    <img src="/src/assets/scene1.jpg" alt="" />
+                    <img src="/src/assets/scene2.jpg" alt="" />
+                    <img src="/src/assets/scene3.jpg" alt="" />
+                    <img src="/src/assets/scene4.jpg" alt="" />
+                    <img src="/src/assets/scene7.jpg" alt="" />
+                </div>
+            </div>
+          </div> }
+
         </div>
       </div>
     </section>

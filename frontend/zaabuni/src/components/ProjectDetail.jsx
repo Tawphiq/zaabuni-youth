@@ -11,6 +11,8 @@ import scene4 from '../assets/scene4.jpg'
 import scene7 from '../assets/scene7.jpg'
 //Donation of an Ultra-Modern Multipurpose Printer Nayiri
 import donatezaa from '../assets/donatezaa.jpg'
+//Football Gala Matches Organized by Zaabuni
+import galamatch from '../assets/galamatch.jpg'
 
 
 const projects = [
@@ -28,15 +30,9 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Agricultural Development',
-    description: 'Promoting sustainable agricultural practices and supporting local farmers. Detailed description goes here...',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
-  },
-  {
-    id: 4,
-    title: 'Youth Empowerment Workshops',
-    description: 'Organizing workshops to empower the youth with skills and knowledge for their future. Detailed description goes here...',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    title: 'Football Gala Matches Organized by Zaabuni',
+    description: 'Zaabuni Youth for Development successfully organized an exhilarating football gala on January 7, 2024. The event brought together teams from across Mamprugu to compete in a friendly yet competitive environment, fostering community spirit and unity. The tournament culminated in a thrilling final match where the West Mamprusi team emerged victorious, claiming the championship title.',
+    image: galamatch,
   },
 ];
 
@@ -84,6 +80,12 @@ const ProjectDetail = () => {
             <p>The multipurpose printer is equipped with advanced features including high-speed printing, scanning, copying, and faxing, designed to meet the diverse needs of the Nayiri’s office.</p>
             <p>This donation will streamline administrative tasks, reduce operational costs, and improve the overall functionality of the office, thereby enhancing governance and service delivery to the people of Mamprugu.</p>
           </div> }
+
+          {project.title === 'Football Gala Matches Organized by Zaabuni' && <div>
+            <p>Teams from various areas participated in a series of matches, showcasing their skills and sportsmanship. The tournament provided an opportunity for local talent to shine and for the community to come together in celebration.</p>
+            <p>The event not only encouraged physical fitness and teamwork but also strengthened the bonds within the community. It served as a platform for identifying potential football talents who may represent Mamprugu in larger regional and national competitions.</p>
+            <p>This initiative highlights our commitment to enhancing social cohesion and providing recreational opportunities for the youth.</p>
+            </div>}
 
         </div>
       </div>

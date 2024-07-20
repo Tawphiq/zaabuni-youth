@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import zabout from '../assets/zabout.jpg'
 import donatezaa from '../assets/donatezaa.jpg'
+import zaagala from '../assets/zaagala.jpg'
 
 
 const projects = [
@@ -20,15 +21,9 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Agricultural Development',
-    description: 'Promoting sustainable agricultural practices and supporting local farmers.',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
-  },
-  {
-    id: 4,
-    title: 'Youth Empowerment Workshops',
-    description: 'Organizing workshops to empower the youth with skills and knowledge for their future.',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    title: 'Football Gala Matches Organized by Zaabuni',
+    description: 'Zaabuni Youth for Development successfully organized an exhilarating football gala on January 7, 2024.',
+    image: zaagala,
   },
 ];
 

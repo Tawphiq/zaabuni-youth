@@ -4,6 +4,7 @@ import Donate from './Donate'
 import Mission from './Mission';
 import Projects from './Projects';
 import Hero from './Hero';
+import Executives from './Executives';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Projects />
       <Donate />
+      <Executives />
       <Contact />
     </div>
   );

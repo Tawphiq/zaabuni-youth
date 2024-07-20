@@ -3,6 +3,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 //zaabuni 1st annual congress
 import zabout from '../assets/zabout.jpg'
+import nayiri from '../assets/nayiri.jpg'
+import zaavice from '../assets/zaavice.jpg'
 import aboutzaa from "../assets/aboutzaa.jpg"
 import scene1 from '../assets/scene1.jpg'
 import scene2 from '../assets/scene2.jpg'
@@ -56,12 +58,12 @@ const ProjectDetail = () => {
             <h1 className='py-6 font-bold text-3xl'>Invitations</h1>
             <div>
             <p>Courtesy calls where made to the distinguished Overload through to his sons the paramount chiefs .</p>
-            <img src="/src/assets/nayiri.jpg" alt="" className='h-96 w-full mt-4' />
+            <img src={nayiri} alt="" className='h-96 w-full mt-4' />
             </div>
             <div className='mt-6'>
                 <p>Zaabuni leadership at the residence of H.E. the Vice President and leader of the NPP in the 2024 presidential elections to officially welcome him to Walewale for the Zaabuni Congress 
                 </p>
-                <img src="/src/assets/zaavice.jpg" alt="" className='mt-4'/>
+                <img src={zaavice} alt="" className='mt-4'/>
             </div>
             <div>
                 <h1 className='py-6 font-bold text-3xl'>Scenes from Zaabuni Congress on the 7th January 2024</h1>

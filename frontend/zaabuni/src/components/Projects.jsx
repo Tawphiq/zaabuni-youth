@@ -17,7 +17,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Donation of an Ultra-Modern Multipurpose Printer Nayiri',
+    title: 'Donation of an Ultra-Modern Multipurpose Printer to the Nayiri Palace',
     description: 'As part of our ongoing efforts to support local leadership and administration, Zaabuni Youth for Development is proud to announce the donation of an ultra-modern multipurpose printer to our esteemed overlord, the Nayiri.',
     image: donatezaa,
   },
@@ -37,11 +37,12 @@ const Projects = () => {
         <h2 className="text-3xl font-bold mb-8">Our Projects</h2>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {projects.map((project) => (
-            <Link data-aos="fade-up" key={project.id} to={`/projects/${project.id}`} className="bg-white rounded-2xl shadow-md p-6">
+            <div data-aos="fade-up" key={project.id} className="bg-white rounded-2xl shadow-md p-6">
               <img src={project.image} alt={project.title} className="rounded-t-lg mb-4 w-full h-40 object-cover" />
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-700 mb-4">{project.description}</p>
-            </Link>
+              <Link to={`/projects/${project.id}`} className='bg-teal-200 p-2 rounded-lg shadow'>See More</Link>
+            </div>
           ))}
         </div>
       </div>

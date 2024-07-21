@@ -5,8 +5,7 @@ import 'aos/dist/aos.css';
 const Contact = () => {
   useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
-    <div data-aos="fade-up" name="contact" className="bg-[url(./assets/zaacontact.jpg)] bg-no-repeat bg-cover font-nunito bg-center lg:bg-topd h-screen w-full">
-      <div className="backdrop-brightness-75 bg-gray-500/50 h-full w-full">
+    <div data-aos="fade-up" name="contact" className="font-nunito bg-gray-400 h-screen w-full">
       <div className="max-w-4xl mx-4">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 pt-10">Contact Us</h1>
@@ -66,7 +65,6 @@ const Contact = () => {
             </div>
           </form>
         </div>
-      </div>
       </div>
     </div>
   );

@@ -11,6 +11,11 @@ import scene2 from '../assets/scene2.jpg'
 import scene3 from '../assets/scene3.jpg'
 import scene4 from '../assets/scene4.jpg'
 import scene7 from '../assets/scene7.jpg'
+import invite1 from '../assets/invite1.jpg'
+import invite2 from '../assets/invite2.jpg'
+import invite4 from '../assets/invite4.jpg'
+import invite5 from '../assets/invite5.jpg'
+import invite6 from '../assets/invite6.jpg'
 //Donation of an Ultra-Modern Multipurpose Printer Nayiri
 import donatezaa from '../assets/donatezaa.jpg'
 //Football Gala Matches Organized by Zaabuni
@@ -64,6 +69,17 @@ const ProjectDetail = () => {
                 <p>Zaabuni leadership at the residence of H.E. the Vice President and leader of the NPP in the 2024 presidential elections to officially welcome him to Walewale for the Zaabuni Congress 
                 </p>
                 <img src={zaavice} alt="" className='mt-4'/>
+            </div>
+            <div className='mt-6 font-bold text-xl'>
+              <h2>Zaabuni Executives Extending In-person Invitations to Chiefs and Dignitaries</h2>
+              <div className='grid grid-cols-2 gap-2'>
+                <img src={invite1} />
+                <img src={invite2} />
+                <img src={invite4} />
+                <img src={invite5} />
+                <img src={invite6} />
+                <img src={invite2} />
+              </div>
             </div>
             <div>
                 <h1 className='py-6 font-bold text-3xl'>Scenes from Zaabuni Congress on the 7th January 2024</h1>

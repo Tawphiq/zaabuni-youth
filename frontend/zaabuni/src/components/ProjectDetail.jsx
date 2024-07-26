@@ -55,22 +55,26 @@ const ProjectDetail = () => {
     <section id="project-detail" className="bg-orange-100">
       <div className="container mx-auto">
         <div className="bg- p-6 rounded shadow-md">
-          <img src={project.image} alt={project.title} className="rounded-t-lg mb-4 w-full h-80 object-cover" />
+          <div className='lg:grid lg:grid-cols-2 lg:gap-8 lg:mx-14'>
+          <img src={project.image} alt={project.title} className="rounded-t-lg mb-4 w-full h-80 object-cover lg:order-2" />
+          <div className='lg:order-1'>
           <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
           <p className="text-lg leading-relaxed">{project.description}</p>
+          </div>
+          </div>
 
           {project.title === "Zaabuni 1st annual congress" && <div>
-            <h1 className='py-6 font-bold text-3xl'>Invitations</h1>
-            <div>
-            <p>Courtesy calls where made to the distinguished Overload through to his sons the paramount chiefs .</p>
-            <img src={nayiri} alt="" className='h-96 w-full mt-4' />
+            <h1 className='py-6 font-bold text-3xl lg:ml-14'>Invitations</h1>
+            <div className='lg:mx-14'>
+            <p className='lg:font-semibold'>Courtesy calls where made to the distinguished Overload through to his sons the paramount chiefs .</p>
+            <img src={nayiri} alt="" className='mt-4' />
             </div>
-            <div className='mt-6'>
-                <p>Zaabuni leadership at the residence of H.E. the Vice President and leader of the NPP in the 2024 presidential elections to officially welcome him to Walewale for the Zaabuni Congress 
+            <div className='mt-6 lg:mx-14'>
+                <p className='lg:font-semibold'>Zaabuni leadership at the residence of H.E. the Vice President and leader of the NPP in the 2024 presidential elections to officially welcome him to Walewale for the Zaabuni Congress 
                 </p>
-                <img src={zaavice} alt="" className='mt-4'/>
+                <img src={zaavice} alt="" className='mt-4 lg:h-96'/>
             </div>
-            <div className='mt-6 font-bold text-xl'>
+            <div className='mt-6 font-bold text-xl lg:mx-14'>
               <h2>Zaabuni Executives Extending In-person Invitations to Chiefs and Dignitaries</h2>
               <div className='grid grid-cols-2 gap-2'>
                 <img src={invite1} />
@@ -81,7 +85,7 @@ const ProjectDetail = () => {
                 <img src={invite2} />
               </div>
             </div>
-            <div>
+            <div className='mx-14'>
                 <h1 className='py-6 font-bold text-3xl'>Scenes from Zaabuni Congress on the 7th January 2024</h1>
                 <div className='grid grid-cols-2 gap-2'>
                     <img src={aboutzaa} alt="" />

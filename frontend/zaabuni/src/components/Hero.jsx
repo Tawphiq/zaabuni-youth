@@ -2,13 +2,15 @@ import {useEffect} from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-scroll';
+//import zaapresent from '../assets/zaapresent.jpg'
 
 
 const Hero = () => {
   useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
-    <div>
-      <div className="text-left mb-10 ml-5 lg:ml-10 h-[70vh] lg:h-[70vh]">
+    <div className=''>
+      {/* <img src={zaapresent} alt="" className='order-2 h-[500px] p-20 hidden lg:flex' /> */}
+      <div className="text-left lg:mx-20 mb-10 ml-5 lg:ml-10h-[70vh]lg:h-[70vh]">
        <h1 data-aos="fade-left" className="text-3xl font-bold text-orange-300 mt-20 lg:mt-40">Zaabuni Youth</h1>
         <p className="text-6xl mt-2">
           Empowering the youth of Mamprugu for a brighter future.

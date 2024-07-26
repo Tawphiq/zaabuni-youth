@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 const Contact = () => {
   useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
-    <div data-aos="fade-up" name="contact" className="font-nunito bg-gray-400 h-screen w-full">
+    <div data-aos="fade-up" name="contact" className="grid justify-center font-nunito bg-gray-400 h-screen w-full">
       <div className="max-w-4xl mx-4">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 pt-10">Contact Us</h1>

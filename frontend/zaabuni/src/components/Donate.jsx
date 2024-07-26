@@ -10,11 +10,11 @@ const Donation = () => {
   return (
     <section data-aos="fade-up" name="donate" className="bg-orange-100 px-4 font-nunito">
       <div className="containerg mx-4">
-        <h2 className="text-3xl font-bold pt-10 text-gray-600">Make a Donation</h2>
-        <div className='grid lg:grid-cols-2 lg:p-16'>
+        <h2 className="text-3xl lg:ml-16 font-bold pt-10 text-gray-600">Make a Donation</h2>
+        <div className='grid lg:grid-cols-2 lg:p-16 lg:gap-10'>
         <img src={donatezaa} alt="" className='rounded-2xl' />
-          </div>
-          <div className='py-5'>
+          
+          <div className='py-5 lg:py-0'>
             <h1 className='text-xl text-gray-700 font-extrabold uppercase'>Mobile Money Details</h1>
             <p className='text-gray-600  text-2xl font-bold'>Merchant ID</p>
             <p className='text-xl mb-4'>000851</p>
@@ -30,7 +30,8 @@ const Donation = () => {
             <p className='text-gray-600  text-2xl font-bold'>Account Number</p>
             <p className='text-xl mb-4'>9061010007408</p>
           </div>
-          <p className="text-xl text-gray-700 pb-10">
+          </div>
+          <p className="text-xl text-gray-700 pb-10 lg:ml-16 lg:font-semibold">
             Your generous contributions help us to empower the youth of Mamprugu
           </p>
       </div>

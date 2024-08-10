@@ -78,7 +78,7 @@ const Navbar = () => {
         <img src={zaawhite} alt="Zaabuni Logo" className='h-12 ml-4 mt-5' />
         </Link>
         {navItems.map(item => (
-          <li key={item.id} className='p-4 border-b border-gray-600 cursor-pointer hover:bg-[#00df9a] hover:text-black duration-300'>
+          <li key={item.id} className='p-4 border-b border-gray-600 cursor-pointer hover:bg-[#00df9a] hover:text-black text-white duration-300'>
             <Link onClick={handleNav} to={item.link} smooth={true} duration={500}>{item.text}</Link>
           </li>
         ))}

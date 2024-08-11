@@ -16,7 +16,7 @@ const Home = () => {
       <About />
       <Projects />
       <Scholarships />
-      <ApplicationForm />
+      {/* <ApplicationForm /> */}
       <Donate />
       <Executives />
       <Contact />

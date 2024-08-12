@@ -18,7 +18,6 @@ const Footer = () => {
                         rel="noopener noreferrer" 
                         className="text-blue-500 ml-4"
                     >
-                       
                         <FontAwesomeIcon icon={faFacebook} size="1x" />
                         <span className='ml-2'>Visit our Facebook</span>
                     </a>

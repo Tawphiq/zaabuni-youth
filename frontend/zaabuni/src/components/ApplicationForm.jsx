@@ -1111,6 +1111,7 @@ const ApplicationForm = () => {
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
+          <label htmlFor="dateOfBirth" className='font-semibold'>Date of Birth</label>
           <input
             type="date"
             name="dateOfBirth"
@@ -1374,15 +1375,15 @@ const ApplicationForm = () => {
             onClick={() => setShowModal(true)}
             className="px-4 py-2 bg-blue-500 text-white rounded"
           >
-            Preview
+            Preview and Download PDF
           </button>
-          <button
+          {/* <button
             type="button"
-            onClick={handleDownloadPdf}
-            className="px-4 py-2 bg-green-500 text-white rounded"
+            onClick={handleClose}
+            className="px-4 py-2 bg-red-500 text-white rounded"
           >
-            Download PDF
-          </button>
+            Close Form
+          </button> */}
         </div>
       </form>
 

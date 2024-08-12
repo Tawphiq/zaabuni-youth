@@ -7,6 +7,8 @@ import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Scholarships from './components/Scholarships';
+import ScholarshipDetail from './components/ScholarshipDetail';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path='/scholarships' element={<Scholarships />} />
+          <Route path='/scholarships/:id' element={<ScholarshipDetail />} />
         </Routes>
         <Footer />
       </div>

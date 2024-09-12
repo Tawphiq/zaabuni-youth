@@ -5,6 +5,8 @@ import Mission from './Mission';
 import Projects from './Projects';
 import Hero from './Hero';
 import Executives from './Executives';
+import Scholarships from './Scholarships'
+import ApplicationForm from './ApplicationForm';
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <Mission />
       <About />
       <Projects />
+      <Scholarships />
+      {/* <ApplicationForm /> */}
       <Donate />
       <Executives />
       <Contact />

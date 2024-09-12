@@ -39,10 +39,11 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: 'Home', link: 'home' },
     { id: 2, text: 'About', link: 'about' },
-    { id: 3, text: 'Projects', link: 'projects' },
-    { id: 4, text: 'Donate', link: 'donate' },
-    { id: 5, text: 'Contact', link: 'contact' },
-    { id: 6, text: 'Executives', link: 'executives' },
+    { id: 3, text:'Scholarships', link: 'scholarships' },
+    { id: 4, text: 'Projects', link: 'projects' },
+    { id: 5, text: 'Donate', link: 'donate' },
+    { id: 6, text: 'Contact', link: 'contact' },
+    { id: 7, text: 'Executives', link: 'executives' },
   ];
 
   return (
@@ -78,7 +79,7 @@ const Navbar = () => {
         <img src={zaawhite} alt="Zaabuni Logo" className='h-12 ml-4 mt-5' />
         </Link>
         {navItems.map(item => (
-          <li key={item.id} className='p-4 border-b border-gray-600 cursor-pointer hover:bg-[#00df9a] hover:text-black duration-300'>
+          <li key={item.id} className='p-4 border-b border-gray-600 cursor-pointer hover:bg-[#00df9a] hover:text-black text-white duration-300'>
             <Link onClick={handleNav} to={item.link} smooth={true} duration={500}>{item.text}</Link>
           </li>
         ))}

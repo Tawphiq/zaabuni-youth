@@ -7,6 +7,7 @@ import Hero from './Hero';
 import Executives from './Executives';
 import Scholarships from './Scholarships'
 import ApplicationForm from './ApplicationForm';
+import Disbursement from './Disbursement';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <About />
       <Projects />
       <Scholarships />
+      <Disbursement />
       {/* <ApplicationForm /> */}
       <Donate />
       <Executives />
